@@ -1,0 +1,195 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,body{
+  height: 100% !important;
+}
+
+#main-background {
+  background-color: #fffafa !important;
+}
+
+#account-background {
+  background-color: rgb(118, 83, 128) !important;
+  height: calc(100%);
+}
+
+.content-wrapper {
+  padding: 1.7em 1.7em 0 0;
+}
+
+#shadow {
+  -webkit-box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.3);
+  -moz-box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.3);
+  box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.3);
+}
+
+input.form-control,
+input.form-control:focus {
+  background-color: #636b7b;
+  color: #fff;
+  border: 1px solid #636b7b;
+
+}
+
+input.form-control:focus {
+  box-shadow: none;
+}
+
+button[type=submit].btn {
+  border-radius: 20px;
+  background-color: #04c582;
+  color: #fff;
+}
+
+div.form-group label:not(.text-danger) {
+  color: #545d6a;
+  font-weight: 700;
+}
+
+div.form-group.required>label:first-child:after {
+  content: '*';
+  color: #fff;
+  padding-left: 5px;
+}
+
+#toast-container>div {
+  opacity: 1;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.wrapped-div {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #2e3137;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Tabs */
+.tab-header {
+  text-align: center;
+}
+
+.tab-header h2.active {
+  color: #fff;
+  border-bottom: 4px solid #fff;
+}
+
+.tab-header h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 30px 40px 10px 40px;
+  cursor: pointer;
+  color: #545d6a;
+  border-bottom: 2px solid #545d6a;
+}
+
+.tab-header h2:focus {
+  outline: none;
+}
+
+form {
+  margin: 0px 16px;
+}
+
+div.form-group input.invalid {
+  border: 1px solid #dc3545;
+}
+
+div.form-group label:first-child {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+#align-right {
+  position: absolute !important;
+  right: 7em !important;
+}
+
+
+.vertical-menu {
+  width: 100%;
+  /* Set a width if you like */
+}
+
+.vertical-menu a {
+  background-color: rgb(93, 87, 122);
+  color: #fff;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  padding-left: 20px !important;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+  color: rgb(93, 87, 122);
+  ;
+}
+
+#menu-wrap {
+  background-color: rgb(93, 87, 122);
+}
+
+.navbar-nav {
+  width: 100% !important;
+}
+
+@media (max-width: 767px) {
+  .navbar-container {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-container {
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    height: 100vh;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-container .navbar {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-container .navbar-collapse {
+    align-items: flex-start;
+  }
+
+  .navbar-container .nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .navbar-container .navbar-nav {
+    flex-direction: column !important;
+  }
+}

@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "signalr-best-practice-api", "signalr-best-practice-api\signalr-best-practice-api.csproj", "{10E95F4A-4C0C-488B-9C5D-5B23732B5928}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "signalr-best-practice-core", "signalr-best-practice-core\signalr-best-practice-core.csproj", "{0F483220-C28E-4E09-9983-52AC0CF9DF1D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "signalr-best-practice-api-models", "signalr-best-practice-api-models\signalr-best-practice-api-models.csproj", "{CAD50737-211C-49B2-A695-235176F3CDBC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "signalr-best-practice-dl-postgresql", "signalr-best-practice-dl-postgresql\signalr-best-practice-dl-postgresql.csproj", "{3843EFF9-65F4-4F3B-B4C9-3C10F0E0C482}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "signalr-best-practice-dl", "signalr-best-practice-dl\signalr-best-practice-dl.csproj", "{81EF447E-1050-4D80-A6B1-1FBC5898DBD3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "signalr-best-practice-bl", "signalr-best-practice-bl\signalr-best-practice-bl.csproj", "{9613AB85-B91C-46C3-9C33-D80F8F3CC677}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "signalr-best-practice-signalr", "signalr-best-practice-signalr\signalr-best-practice-signalr.csproj", "{1A7BFB6F-F189-422B-A145-D3E278803139}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10E95F4A-4C0C-488B-9C5D-5B23732B5928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10E95F4A-4C0C-488B-9C5D-5B23732B5928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10E95F4A-4C0C-488B-9C5D-5B23732B5928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10E95F4A-4C0C-488B-9C5D-5B23732B5928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F483220-C28E-4E09-9983-52AC0CF9DF1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F483220-C28E-4E09-9983-52AC0CF9DF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F483220-C28E-4E09-9983-52AC0CF9DF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F483220-C28E-4E09-9983-52AC0CF9DF1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAD50737-211C-49B2-A695-235176F3CDBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD50737-211C-49B2-A695-235176F3CDBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD50737-211C-49B2-A695-235176F3CDBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD50737-211C-49B2-A695-235176F3CDBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3843EFF9-65F4-4F3B-B4C9-3C10F0E0C482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3843EFF9-65F4-4F3B-B4C9-3C10F0E0C482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3843EFF9-65F4-4F3B-B4C9-3C10F0E0C482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3843EFF9-65F4-4F3B-B4C9-3C10F0E0C482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81EF447E-1050-4D80-A6B1-1FBC5898DBD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81EF447E-1050-4D80-A6B1-1FBC5898DBD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81EF447E-1050-4D80-A6B1-1FBC5898DBD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81EF447E-1050-4D80-A6B1-1FBC5898DBD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9613AB85-B91C-46C3-9C33-D80F8F3CC677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9613AB85-B91C-46C3-9C33-D80F8F3CC677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9613AB85-B91C-46C3-9C33-D80F8F3CC677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9613AB85-B91C-46C3-9C33-D80F8F3CC677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A7BFB6F-F189-422B-A145-D3E278803139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A7BFB6F-F189-422B-A145-D3E278803139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A7BFB6F-F189-422B-A145-D3E278803139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A7BFB6F-F189-422B-A145-D3E278803139}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88BB23DB-4C2C-409C-A3CE-87A211E181E8}
+	EndGlobalSection
+EndGlobal

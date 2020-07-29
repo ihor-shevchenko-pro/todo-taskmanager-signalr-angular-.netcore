@@ -1,0 +1,15 @@
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-dl-postgresql\bin\Debug\netcoreapp3.1\signalr-best-practice-dl-postgresql.deps.json
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-dl-postgresql\bin\Debug\netcoreapp3.1\signalr-best-practice-dl-postgresql.dll
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-dl-postgresql\obj\Debug\netcoreapp3.1\signalr-best-practice-dl-postgresql.csprojAssemblyReference.cache
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-dl-postgresql\obj\Debug\netcoreapp3.1\signalr-best-practice-dl-postgresql.AssemblyInfoInputs.cache
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-dl-postgresql\obj\Debug\netcoreapp3.1\signalr-best-practice-dl-postgresql.AssemblyInfo.cs
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-dl-postgresql\bin\Debug\netcoreapp3.1\signalr-best-practice-api-models.dll
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-dl-postgresql\bin\Debug\netcoreapp3.1\signalr-best-practice-core.dll
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-dl-postgresql\bin\Debug\netcoreapp3.1\signalr-best-practice-dl-postgresql.runtimeconfig.json
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-dl-postgresql\bin\Debug\netcoreapp3.1\signalr-best-practice-dl-postgresql.runtimeconfig.dev.json
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-dl-postgresql\bin\Debug\netcoreapp3.1\signalr-best-practice-dl-postgresql.pdb
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-dl-postgresql\bin\Debug\netcoreapp3.1\signalr-best-practice-core.pdb
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-dl-postgresql\bin\Debug\netcoreapp3.1\signalr-best-practice-api-models.pdb
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-dl-postgresql\obj\Debug\netcoreapp3.1\signalr-best-practice-dl-postgresql.csproj.CopyComplete
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-dl-postgresql\obj\Debug\netcoreapp3.1\signalr-best-practice-dl-postgresql.dll
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-dl-postgresql\obj\Debug\netcoreapp3.1\signalr-best-practice-dl-postgresql.pdb

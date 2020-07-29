@@ -1,0 +1,42 @@
+<img src="/assets/img/todo-logo.png" style="width: 200px;" class="mx-auto d-block">
+<form [formGroup]="loginFormModel" class="mb-4" autocomplete="off" (submit)="onLoginFormSubmit()">
+  <!-- Login start -->
+  <div class="form-group">
+    <label>LOGIN</label>
+    <input class="form-control" formControlName="Login">
+    <label class="text-danger col-sm-12 pl-0" *ngIf="loginFormModel.get('Login').touched &&
+    loginFormModel.get('Login').errors?.required">
+      * required field
+    </label>
+    <label class="text-danger col-sm-12 pl-0" *ngIf="loginFormModel.get('Login').touched &&
+   loginFormModel.get('Login').errors?.email">
+      * invalid email format
+    </label>
+  </div>
+  <!-- Login finish -->
+  <!-- Password start -->
+  <div class="form-group">
+    <label>PASSWORD</label>
+    <input type="password" class="form-control" formControlName="Password">
+    <label class="text-danger col-sm-12 pl-0" *ngIf="loginFormModel.get('Password').touched &&
+    loginFormModel.get('Password').errors?.required">
+      * required field
+    </label>
+    <label class="text-danger col-sm-12 pl-0" *ngIf="loginFormModel.get('Password').touched &&
+    loginFormModel.get('Password').errors?.minlength">
+      * min length 4 characters
+    </label>
+    <label class="text-danger col-sm-12 pl-0" *ngIf="loginFormModel.get('Password').touched &&
+    loginFormModel.get('Password').errors?.maxlength">
+      * max length 20 characters
+    </label>
+  </div>
+  <!-- Password finish -->
+  <!-- Submit button start -->
+  <div class="form-row">
+    <div class="form-group col-md-8 offset-md-2">
+      <button type="submit" class="btn btn-lg btn-block" [disabled]="!loginFormModel.valid">Login</button>
+    </div>
+  </div>
+  <!-- Submit button finish -->
+</form>

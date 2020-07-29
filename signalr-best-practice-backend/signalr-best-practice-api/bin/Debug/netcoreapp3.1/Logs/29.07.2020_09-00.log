@@ -1,0 +1,125 @@
+29.07.2020 09:04:26.6681 <> [MESSAGE][.ctor] >>> Create Hub Connection Cache
+29.07.2020 09:04:26.6738 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:04:26.6865 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: lpZQhSWr4bqjHFcjrif2CA
+29.07.2020 09:04:41.2322 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:04:41.2343 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId lpZQhSWr4bqjHFcjrif2CA
+29.07.2020 09:04:46.1721 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:04:46.1739 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: RI1wnyUpx7g88sx1BaLkJA
+29.07.2020 09:08:05.4150 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:08:14.2855 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId RI1wnyUpx7g88sx1BaLkJA
+29.07.2020 09:09:26.4412 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:09:26.4414 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: pHbhrJlmur9K9cM0gA17Rw
+29.07.2020 09:15:40.8043 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:15:40.8050 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId pHbhrJlmur9K9cM0gA17Rw
+29.07.2020 09:15:45.0782 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:15:45.0785 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: oRxv3X6RrqbsEoQFz151Gw
+29.07.2020 09:16:16.0996 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:16:16.0998 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId oRxv3X6RrqbsEoQFz151Gw
+29.07.2020 09:16:26.1751 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:16:26.1752 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: VCopYFmNKRnygQ-TiI-BAg
+29.07.2020 09:22:19.5865 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:22:19.5868 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId VCopYFmNKRnygQ-TiI-BAg
+29.07.2020 09:31:48.1048 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:31:48.1049 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: BWqaqjIcbRovgDT3wEqknQ
+29.07.2020 09:32:35.4162 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:32:35.4169 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId BWqaqjIcbRovgDT3wEqknQ
+29.07.2020 09:32:38.9361 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:32:38.9362 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: W9xUJBy0RbWDmVSxMh2rig
+29.07.2020 09:32:44.4648 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:32:44.4650 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId W9xUJBy0RbWDmVSxMh2rig
+29.07.2020 09:32:47.1594 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:32:47.1595 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: PUMtrHGL9lW5I3C6lH0Ieg
+29.07.2020 09:32:50.5530 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:32:50.5531 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId PUMtrHGL9lW5I3C6lH0Ieg
+29.07.2020 09:32:57.4847 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:32:57.4848 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: MCUZ3wXJeiQy-A97DpNh3w
+29.07.2020 09:32:59.6127 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:32:59.6215 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId MCUZ3wXJeiQy-A97DpNh3w
+29.07.2020 09:34:41.6558 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:34:41.6559 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: Mkt2KfS461vrM2r6GYRpfQ
+29.07.2020 09:34:42.6465 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:34:42.6466 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId Mkt2KfS461vrM2r6GYRpfQ
+29.07.2020 09:34:46.2293 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:34:46.2325 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: CcYG0RIvLuIxDAkZy397Pw
+29.07.2020 09:34:49.8864 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:34:49.8866 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId CcYG0RIvLuIxDAkZy397Pw
+29.07.2020 09:35:52.8097 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:35:52.8098 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: NqtGxaNRx65MW1wVz3lKIQ
+29.07.2020 09:35:58.4210 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:35:58.4211 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId NqtGxaNRx65MW1wVz3lKIQ
+29.07.2020 09:36:00.6601 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:36:00.6708 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: uqLLjAk8qHyK4hVL-45NiQ
+29.07.2020 09:39:46.0931 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:39:46.0934 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId uqLLjAk8qHyK4hVL-45NiQ
+29.07.2020 09:39:48.0845 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:39:48.0846 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: RHu1S2OvYIRSZdFFSaH0oQ
+29.07.2020 09:40:35.5222 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:40:35.5233 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId RHu1S2OvYIRSZdFFSaH0oQ
+29.07.2020 09:40:37.8697 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:40:37.8699 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: QMPmq9g8PC8clmsiIWpFHQ
+29.07.2020 09:41:12.5640 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:41:12.5641 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId QMPmq9g8PC8clmsiIWpFHQ
+29.07.2020 09:41:14.8238 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:41:14.8241 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: -7uUXBYz490jZSaqoeXbsA
+29.07.2020 09:41:48.0932 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:41:48.0933 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId -7uUXBYz490jZSaqoeXbsA
+29.07.2020 09:41:50.4668 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:41:50.4668 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: pzbAVEg1nPFER5rtBlfBWg
+29.07.2020 09:42:20.5528 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:42:20.5529 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId pzbAVEg1nPFER5rtBlfBWg
+29.07.2020 09:42:22.7041 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:42:22.7041 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: Iu3Gwxy98Vlwlc9aE2TcjA
+29.07.2020 09:42:57.9500 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:42:57.9500 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId Iu3Gwxy98Vlwlc9aE2TcjA
+29.07.2020 09:43:00.1021 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:43:00.1021 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: 9Hze82nY9W8RrrONCmc8mg
+29.07.2020 09:43:06.9863 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:43:06.9870 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId 9Hze82nY9W8RrrONCmc8mg
+29.07.2020 09:43:09.1241 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:43:09.1242 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: C5bJ3i6EiD8EJ8zxGF_SLw
+29.07.2020 09:44:25.1234 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:44:25.1234 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId C5bJ3i6EiD8EJ8zxGF_SLw
+29.07.2020 09:44:40.2117 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:44:40.2117 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: BXpYORsyNIKMNHDAGkQymw
+29.07.2020 09:45:01.5497 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:45:01.5498 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId BXpYORsyNIKMNHDAGkQymw
+29.07.2020 09:45:03.7956 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:45:03.7956 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: le6qXnkSr8mPpuoij34klQ
+29.07.2020 09:45:04.9099 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:45:04.9100 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId le6qXnkSr8mPpuoij34klQ
+29.07.2020 09:46:01.2902 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:46:01.2902 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: Ebn2iREg4cIhL7buyAE4lQ
+29.07.2020 09:46:02.1411 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:46:02.1412 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId Ebn2iREg4cIhL7buyAE4lQ
+29.07.2020 09:46:23.5194 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:46:23.5194 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: aY8QqOS7nbZM1T_h-XEwiA
+29.07.2020 09:48:19.7186 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:48:19.7187 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId aY8QqOS7nbZM1T_h-XEwiA
+29.07.2020 09:48:22.6300 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:48:22.6301 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: HmMr6IXq3vA4pXBmt7ntjQ
+29.07.2020 09:48:37.9885 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:48:37.9886 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId HmMr6IXq3vA4pXBmt7ntjQ
+29.07.2020 09:48:40.9990 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:48:40.9990 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: FVOZJdSvNi1uTMnwBkfvSg
+29.07.2020 09:48:51.9704 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:48:51.9705 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId FVOZJdSvNi1uTMnwBkfvSg
+29.07.2020 09:48:54.0276 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:48:54.0276 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: LtnplwW_h6xyYrNxC1EuJQ
+29.07.2020 09:50:29.2532 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:50:29.2532 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId LtnplwW_h6xyYrNxC1EuJQ
+29.07.2020 09:50:36.9142 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:50:36.9142 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: tId8GD1oHi2SxalWs6MuOA
+29.07.2020 09:51:01.8056 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:51:01.8056 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId tId8GD1oHi2SxalWs6MuOA
+29.07.2020 09:51:09.3369 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:51:09.3369 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: yLvTZeYyEizD5LRTT4NLnA
+29.07.2020 09:51:21.4491 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:51:21.4491 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId yLvTZeYyEizD5LRTT4NLnA
+29.07.2020 09:51:30.5753 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 09:51:30.5753 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: 4CDcDhXAGYZ7dCvrSbGFJw
+29.07.2020 10:02:56.1621 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 10:02:56.1622 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId 4CDcDhXAGYZ7dCvrSbGFJw
+29.07.2020 10:15:10.0955 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 10:15:10.0956 <> [MESSAGE][OnConnectedAsync] Connect userId: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId: n3tR4hPmDQt26xQymQX-7w
+29.07.2020 10:15:11.6485 <> [MESSAGE][.ctor] Notification hub created
+29.07.2020 10:15:11.6485 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 61621542-acb2-450a-a6bc-c04e10f2e78e - ConnectionId n3tR4hPmDQt26xQymQX-7w

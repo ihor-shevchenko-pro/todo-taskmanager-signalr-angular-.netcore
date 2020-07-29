@@ -1,0 +1,13 @@
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-signalr\bin\Debug\netcoreapp3.1\signalr-best-practice-signalr.deps.json
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-signalr\bin\Debug\netcoreapp3.1\signalr-best-practice-signalr.dll
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-signalr\obj\Debug\netcoreapp3.1\signalr-best-practice-signalr.csprojAssemblyReference.cache
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-signalr\obj\Debug\netcoreapp3.1\signalr-best-practice-signalr.AssemblyInfoInputs.cache
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-signalr\obj\Debug\netcoreapp3.1\signalr-best-practice-signalr.AssemblyInfo.cs
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-signalr\bin\Debug\netcoreapp3.1\signalr-best-practice-api-models.dll
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-signalr\bin\Debug\netcoreapp3.1\signalr-best-practice-core.dll
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-signalr\bin\Debug\netcoreapp3.1\signalr-best-practice-core.pdb
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-signalr\bin\Debug\netcoreapp3.1\signalr-best-practice-api-models.pdb
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-signalr\obj\Debug\netcoreapp3.1\signalr-best-practice-signalr.csproj.CopyComplete
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-signalr\bin\Debug\netcoreapp3.1\signalr-best-practice-signalr.pdb
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-signalr\obj\Debug\netcoreapp3.1\signalr-best-practice-signalr.dll
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-signalr\obj\Debug\netcoreapp3.1\signalr-best-practice-signalr.pdb

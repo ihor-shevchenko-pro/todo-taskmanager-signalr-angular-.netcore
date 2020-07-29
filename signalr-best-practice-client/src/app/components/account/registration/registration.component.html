@@ -1,0 +1,52 @@
+<form [formGroup]="registerFormModel" autocomplete="off" (submit)="onRegisterFormSubmit()">
+    <!-- UserName start -->
+    <div class="form-group required">
+      <label>Username</label>
+      <input class="form-control" formControlName="UserName">
+      <label class="text-danger" *ngIf="registerFormModel.get('UserName').touched 
+      && registerFormModel.get('UserName').errors?.required">
+        * required field
+      </label>
+    </div>
+    <!-- UserName finish -->
+    <!-- Email start -->
+    <div class="form-group">
+      <label>Email</label>
+      <input class="form-control" formControlName="Login">
+      <label class="text-danger" *ngIf="registerFormModel.get('Login').touched 
+      && registerFormModel.get('Login').errors?.required">
+        * required field
+      </label>
+      <label class="text-danger" *ngIf="registerFormModel.get('Login').touched 
+      && registerFormModel.get('Login').errors?.email">
+        * invalid email address
+      </label>
+    </div>
+    <!-- Emain finish -->
+    <!-- Password start -->
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" class="form-control" formControlName="Password">
+      <label class="text-danger col-sm-12 pl-0" *ngIf="registerFormModel.get('Password').touched &&
+      registerFormModel.get('Password').errors?.required">
+        * required field
+      </label>
+      <label class="text-danger col-sm-12 pl-0" *ngIf="registerFormModel.get('Password').touched &&
+      registerFormModel.get('Password').errors?.minlength">
+        * min length 4 characters
+      </label>
+      <label class="text-danger col-sm-12 pl-0" *ngIf="registerFormModel.get('Password').touched &&
+      registerFormModel.get('Password').errors?.maxlength">
+        * max length 20 characters
+      </label>
+    </div>
+    <!-- Password finish -->
+    <!-- Submit button start -->
+    <div class="form-row">
+      <div class="form-group col-md-8 offset-md-2">
+        <button type="submit" class="btn btn-lg btn-block" [disabled]="!registerFormModel.valid">Sign Up</button>
+      </div>
+    </div>
+    <!-- Submit button finish -->
+  </form>
+  

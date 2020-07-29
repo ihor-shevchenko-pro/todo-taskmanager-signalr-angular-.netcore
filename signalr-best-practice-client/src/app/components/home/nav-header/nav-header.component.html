@@ -1,0 +1,13 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a routerLink="/home" class="navbar-brand text-white mx-2">
+    <img src="/assets/img/todo-logo.png" style="width: 35px;">
+    <span class="mx-2">ToDoTask Manager</span>
+  </a>
+  <div id="align-right" *ngIf="userName && email">
+    <span class="mx-3 text-white">
+      <img src="/assets/img/user.png" class="mx-2">
+      <strong>{{userName}}</strong>
+    </span>
+  </div>
+  <button class="btn btn-outline-warning my-2 my-sm-0" (click)="onLogout()">Logout</button>
+</nav>

@@ -1,0 +1,28 @@
+<h2>All Users</h2>
+
+<!-- Table start -->
+<table class="table table-striped table-hover" id="shadow">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">UserName</th>
+      <th scope="col">Email</th>
+      <th scope="col">Created</th>
+      <th scope="col">Option</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users; index as i">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{user.user_name}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.created | date: 'medium'}}</td>
+      <td>
+        <button [routerLink]="['/home/todotask']" class="btn btn-sm btn-outline-success">
+          Create task
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- Table finish -->

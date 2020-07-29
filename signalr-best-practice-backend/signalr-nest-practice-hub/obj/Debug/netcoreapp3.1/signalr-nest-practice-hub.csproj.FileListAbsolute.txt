@@ -1,0 +1,5 @@
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-nest-practice-hub\bin\Debug\netcoreapp3.1\signalr-nest-practice-hub.deps.json
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-nest-practice-hub\bin\Debug\netcoreapp3.1\signalr-nest-practice-hub.dll
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-nest-practice-hub\obj\Debug\netcoreapp3.1\signalr-nest-practice-hub.csprojAssemblyReference.cache
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-nest-practice-hub\obj\Debug\netcoreapp3.1\signalr-nest-practice-hub.AssemblyInfoInputs.cache
+D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-nest-practice-hub\obj\Debug\netcoreapp3.1\signalr-nest-practice-hub.AssemblyInfo.cs
