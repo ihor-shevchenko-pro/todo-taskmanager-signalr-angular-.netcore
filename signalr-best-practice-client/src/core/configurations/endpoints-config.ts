@@ -19,3 +19,12 @@ export const userEndpoints = {
     getUserById: baseApiUrl + "/user/get",
     getUsers: baseApiUrl + "/user/get",
 };
+
+//ToDoTask
+export const toDoTaskEndpoints = {
+    addToDoTaskSingleUser: baseApiUrl + "/todotask/add",
+    addToDoTaskAllUsers: baseApiUrl + "/todotask/add_for_all",
+    getSentTodotask: baseApiUrl + "/todotask/sent_todotasks",
+    getReceivedTodotask: baseApiUrl + "/todotask/received_todotasks",
+    changeTaskProgressStatus: baseApiUrl + "/todotask/progress_status",
+}

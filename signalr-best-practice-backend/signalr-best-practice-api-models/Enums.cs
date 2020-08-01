@@ -30,17 +30,18 @@
         New = 0,
         InProgress = 1,
         Complited = 2,
+        Cancelled = 3,
     }
 
-    public enum ModelType
+    public enum ModelTypeEnum
     {
-        ToDotask = 0,
+        ToDoTask = 0,
         User = 1,
         UserProfile = 2,
         Role = 3,
     }
 
-    public enum NotificationType
+    public enum NotificationTypeEnum
     {
         // Base
         ModelAdd = 1000,
@@ -51,13 +52,17 @@
         // UserOnline
         UserOnline = 2000,
         UserOffline = 2100,
+
+        // ToDoTask
+        ChangeProgressStatus = 3000,
     }
 
-    public enum NotificationStatus
+    public enum NotificationStatusEnum
     {
         New = 0,
-        Sent = 1,
-        Read = 2,
+        Received = 1,
+        InProgress = 2,
+        Complited = 3,
     }
 
     public enum DataTypeEnum

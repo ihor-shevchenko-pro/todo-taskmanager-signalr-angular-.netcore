@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule, NgbDatepickerI18n } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,8 +18,9 @@ import { AuthInterceptor } from 'src/core/auth/auth.guard.spec';
 import { NavHeaderComponent } from './components/home/nav-header/nav-header.component';
 import { SideMenuComponent } from './components/home/side-menu/side-menu.component';
 import { UsersComponent } from './components/content/users/users.component';
-import { TodotaskComponent } from './components/content/todotask/todotask.component';
-import { CustomDatepickerI18n, I18n } from 'src/core/shared/datepicker/datepicker-i18n';
+import { AddTodotaskComponent } from './components/content/todotask/add-todotask/add-todotask.component';
+import { SentTodotasksComponent } from './components/content/todotask/sent-todotasks/sent-todotasks.component';
+import { ReceivedTodotasksComponent } from './components/content/todotask/received-todotasks/received-todotasks.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { CustomDatepickerI18n, I18n } from 'src/core/shared/datepicker/datepicke
     NavHeaderComponent,
     SideMenuComponent,
     UsersComponent,
-    TodotaskComponent,
+    AddTodotaskComponent,
+    SentTodotasksComponent,
+    ReceivedTodotasksComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,9 +45,10 @@ import { CustomDatepickerI18n, I18n } from 'src/core/shared/datepicker/datepicke
       closeButton: true,
     }),
     AppRoutingModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'}),
     HttpClientModule,
     NgbModule,
+    NgMultiSelectDropDownModule.forRoot(),
   ],
   providers: [AccountService,
     {
@@ -51,8 +56,6 @@ import { CustomDatepickerI18n, I18n } from 'src/core/shared/datepicker/datepicke
       useClass: AuthInterceptor,
       multi: true
     },
-    // define custom NgbDatepickerI18n provider
-    I18n, { provide: NgbDatepickerI18n, useClass: CustomDatepickerI18n }
   ],
   bootstrap: [AppComponent]
 })

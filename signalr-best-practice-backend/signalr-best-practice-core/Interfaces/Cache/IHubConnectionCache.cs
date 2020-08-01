@@ -10,7 +10,6 @@ namespace signalr_best_practice_core.Interfaces.Cache
         HubUser GetUserByUserId(string userId);
         IEnumerable<HubUser> GetUsersByUserIds(IEnumerable<string> userIds);
         IEnumerable<string> GetConnectionIds(params string[] userIds);
-        IEnumerable<string> GetConnectionIds(string connectionId);
         void AddConnectionId(string userId, string connectionId);
         void RemoveUsersByUserId(string userId);
         void RemoveConnectionId(string connectionId);

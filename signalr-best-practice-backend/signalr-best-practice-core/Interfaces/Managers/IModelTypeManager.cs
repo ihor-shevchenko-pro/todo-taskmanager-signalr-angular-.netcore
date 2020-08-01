@@ -4,7 +4,7 @@ namespace signalr_best_practice_core.Interfaces.Managers
 {
     public interface IModelTypeManager
     {
-        ModelType? GetModelType<T>(T model);
-        ModelType? GetModelType<T>();
+        ModelTypeEnum? GetModelType<T>(T model);
+        ModelTypeEnum? GetModelType<T>();
     }
 }

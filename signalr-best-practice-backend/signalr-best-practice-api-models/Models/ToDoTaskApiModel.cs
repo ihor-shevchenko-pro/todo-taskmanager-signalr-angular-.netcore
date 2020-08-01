@@ -8,7 +8,7 @@ namespace signalr_best_practice_api_models.Models
     {
         [JsonProperty("title")]              public string Title { get; set; }
         [JsonProperty("description")]        public string Description { get; set; }
-        [JsonProperty("task_finish")]        public DateTime? TaskFinish { get; set; }
+        [JsonProperty("expiration_date")]    public DateTime? ExpirationDate { get; set; }
         [JsonProperty("progress_status")]    public ToDoTaskStatusEnum ProgressStatus { get; set; }
         [JsonProperty("from_user_id")]       public string FromUserId { get; set; }
         [JsonProperty("to_user_id")]         public string ToUserId { get; set; }
@@ -33,5 +33,11 @@ namespace signalr_best_practice_api_models.Models
 
     public class ToDoTaskAddApiModel : ToDoTaskBaseApiModel
     {
+    }
+
+    public class ToDoTaskChangeProgressStatusApiModel
+    {
+        [JsonProperty("id")]                 public string Id { get; set; }
+        [JsonProperty("progress_status")]    public ToDoTaskStatusEnum ProgressStatus { get; set; }
     }
 }

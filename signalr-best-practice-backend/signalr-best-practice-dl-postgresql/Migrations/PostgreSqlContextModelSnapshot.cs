@@ -54,6 +54,9 @@ namespace signalr_best_practice_dl_postgresql.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("text");
 
+                    b.Property<DateTime?>("ExpirationDate")
+                        .HasColumnType("timestamp without time zone");
+
                     b.Property<string>("FromUserId")
                         .HasColumnType("text");
 
@@ -62,9 +65,6 @@ namespace signalr_best_practice_dl_postgresql.Migrations
 
                     b.Property<int>("Status")
                         .HasColumnType("integer");
-
-                    b.Property<DateTime?>("TaskFinish")
-                        .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("Title")
                         .HasColumnType("text");

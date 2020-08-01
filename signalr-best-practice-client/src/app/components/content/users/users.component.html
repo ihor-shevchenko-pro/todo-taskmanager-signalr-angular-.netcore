@@ -1,7 +1,14 @@
-<h2>All Users</h2>
+<div class="row">
+  <h2>All Users</h2>
+  <span>
+    <button class="btn btn-xl btn-outline-primary ml-4" (click)="redirectToCreateTask()">
+    TASK FOR ALL
+  </button>
+</span>
+</div>
 
 <!-- Table start -->
-<table class="table table-striped table-hover" id="shadow">
+<table class="table table-striped table-hover shadow">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -16,10 +23,13 @@
       <th scope="row">{{ i + 1 }}</th>
       <td>{{user.user_name}}</td>
       <td>{{user.email}}</td>
-      <td>{{user.created | date: 'medium'}}</td>
+      <td>{{user.created | date: 'dd/MM/yyyy hh:mm:ss'}}</td>
       <td>
-        <button [routerLink]="['/home/todotask']" class="btn btn-sm btn-outline-success">
-          Create task
+        <button *ngIf="user.email == currentUserEmail" disabled class="btn btn-sm btn-outline-success" (click)="redirectToCreateTask(user.id)">
+          Assign a task
+        </button>
+        <button *ngIf="user.email != currentUserEmail" class="btn btn-sm btn-outline-success" (click)="redirectToCreateTask(user.id)">
+          Assign a task
         </button>
       </td>
     </tr>

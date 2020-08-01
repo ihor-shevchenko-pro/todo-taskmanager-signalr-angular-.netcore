@@ -14,7 +14,6 @@ namespace signalr_best_practice_api.Controllers
     {
         public RoleController(IRoleService service, IDataMapper dataMapper) : base(service, dataMapper)
         {
-            _service = service;
         }
     }
 }

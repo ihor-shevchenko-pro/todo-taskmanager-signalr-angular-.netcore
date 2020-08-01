@@ -33,7 +33,7 @@ namespace signalr_best_practice_signalr.Managers
 
             try
             {
-                user = _cache.GetUserByUserId(model.UserId);
+                user = _cache.GetUserByUserId(model.ToUserId);
                 if (user == null) return Task.FromResult(1);
 
                 foreach (string connection in user.ConnectionIds)
@@ -64,7 +64,7 @@ namespace signalr_best_practice_signalr.Managers
 
                 foreach (var notification in models)
                 {
-                    var user = _cache.GetUserByUserId(notification.UserId);
+                    var user = _cache.GetUserByUserId(notification.ToUserId);
 
                     #if DEV
                     LogPush(notification, user);
@@ -129,7 +129,7 @@ namespace signalr_best_practice_signalr.Managers
             {
                 Log.Current.Message($@"
                 ================ Push Notification log ================
-                User: {notification.UserId}
+                User: {notification.ToUserId}
                 Model type: {notification.NotificationDataType}
                 Notification type: {notification.NotificationType}
                 Connectioin ids: {JsonConvert.SerializeObject(user?.ConnectionIds)}

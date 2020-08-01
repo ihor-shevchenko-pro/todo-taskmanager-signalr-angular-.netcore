@@ -19,14 +19,14 @@ export class AccountService {
   constructor(private _httpClient: HttpClient,
               private _router: Router) { }
 
-  public login(loginFormModel: FormGroup): Observable<ISignInResponse>{
+  public login(loginFormModel: FormGroup): Observable<ISignInResponse> {
     let loginModel = new LoginModel();
     loginModel.login = loginFormModel.value.Login;
     loginModel.password = loginFormModel.value.Password;
     return this._httpClient.post<ISignInResponse>(this._loginUrl, loginModel);
   }
 
-  public registration(registerFormModel: FormGroup): Observable<ISignInResponse>{
+  public registration(registerFormModel: FormGroup): Observable<ISignInResponse> {
     let registrationModel = new RegistrationModel();
     registrationModel.login = registerFormModel.value.Login;
     registrationModel.password = registerFormModel.value.Password;
@@ -35,10 +35,10 @@ export class AccountService {
   }
 
   public checkAutTokenInLocalStorage(): boolean {
-    if(localStorage.getItem('token') != null){
+    if (localStorage.getItem('token') != null) {
       return true;
     }
-    else{
+    else {
       return false;
     }
   }
@@ -47,7 +47,7 @@ export class AccountService {
     return localStorage.getItem('token');
   }
 
-  public onLogout(): void{
+  public onLogout(): void {   
     localStorage.removeItem('token');
     this._router.navigateByUrl('/account/login');
   }

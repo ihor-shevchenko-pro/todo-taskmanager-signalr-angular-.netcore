@@ -6,11 +6,11 @@ namespace signalr_best_practice_core.Managers
 {
     public class ModelTypeManager : IModelTypeManager
     {
-        public ModelType? GetModelType<T>(T model)
+        public ModelTypeEnum? GetModelType<T>(T model)
         {
             string typeName = model.GetType().Name.Replace("GetFullApiModel", "");
 
-            if (Enum.TryParse(typeName, out ModelType type))
+            if (Enum.TryParse(typeName, out ModelTypeEnum type))
             {
                 return type;
             }
@@ -20,11 +20,11 @@ namespace signalr_best_practice_core.Managers
             }
         }
 
-        public ModelType? GetModelType<T>()
+        public ModelTypeEnum? GetModelType<T>()
         {
             string typeName = typeof(T).Name.Replace("GetFullApiModel", "");
 
-            if (Enum.TryParse(typeName, out ModelType type))
+            if (Enum.TryParse(typeName, out ModelTypeEnum type))
             {
                 return type;
             }

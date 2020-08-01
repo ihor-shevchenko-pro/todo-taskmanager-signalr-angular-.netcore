@@ -25,17 +25,16 @@ namespace signalr_best_practice_api.Controllers.Base
             return Ok(model);
         }
 
-        protected virtual Task BroadcastMessageSignalR<T>(NotificationType notificationType, T model, bool sendToAll,
+        protected virtual Task BroadcastMessageSignalR<T>(NotificationTypeEnum notificationType, T model, bool sendToAll,
             params string[] users)
         {
             string jsonString;
-            ModelType? modelType;
+            ModelTypeEnum? modelType;
             IModelTypeManager modelTypeManager;
             IEnumerable<NotificationGetFullApiModel> notificationModels;
             ISignalRNotificationManager notificationManager;
 
             string userId = GetUserId();
-            if (userId == null) userId = users[0];
 
             return Task.Run(() =>
             {
@@ -48,15 +47,16 @@ namespace signalr_best_practice_api.Controllers.Base
                     if (modelType == null) return;
 
                     jsonString = JsonConvert.SerializeObject(model);
-                    notificationModels = users.Select(x =>
+                    notificationModels = users.Select(user =>
                     new NotificationGetFullApiModel()
                     {
                         Created = DateTime.UtcNow,
                         Data = jsonString,
-                        UserId = userId,
+                        FromUserId = userId,
+                        ToUserId = user,
                         NotificationType = notificationType,
                         NotificationDataType = modelType.Value,
-                        NotificationStatus = NotificationStatus.Sent,
+                        NotificationStatus = NotificationStatusEnum.New,
                         Title = "notification",
                         Description = $"from {DateTime.UtcNow}",
                     });
@@ -71,7 +71,7 @@ namespace signalr_best_practice_api.Controllers.Base
             });
         }
 
-        protected virtual async Task BroadcastMessageSignalR<T>(NotificationType notificationType, IEnumerable<T> models,
+        protected virtual async Task BroadcastMessageSignalR<T>(NotificationTypeEnum notificationType, IEnumerable<T> models,
             bool sendToAll, Func<T, string[]> recipientPredicate)
         {
             if (recipientPredicate == null) return;

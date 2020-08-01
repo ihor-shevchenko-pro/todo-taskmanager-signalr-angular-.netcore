@@ -33,7 +33,7 @@ namespace signalr_best_practice_api.Controllers.Base
             TKey id = await _service.Add(model);
 
             var modelResult = await _service.Get(id);
-            await BroadcastMessageSignalR(NotificationType.ModelAdd, modelResult, false, GetUserId());
+            await BroadcastMessageSignalR(NotificationTypeEnum.ModelAdd, modelResult, false, GetUserId());
 
             return SuccessResult(new SuccessResponseApiModel<TKey>() { Response = "success", Id = id });
         }
@@ -45,7 +45,7 @@ namespace signalr_best_practice_api.Controllers.Base
             await _service.Update(model);
 
             var modelResult = await _service.Get(model.Id);
-            await BroadcastMessageSignalR(NotificationType.ModelUpdate, modelResult, false, GetUserId());
+            await BroadcastMessageSignalR(NotificationTypeEnum.ModelUpdate, modelResult, false, GetUserId());
 
             return SuccessResult(new SuccessResponseApiModel<TKey>() { Response = "success", Id = model.Id });
         }
@@ -80,7 +80,7 @@ namespace signalr_best_practice_api.Controllers.Base
             await _service.ChangeEntityStatus(model.Id, model.Status);
 
             var modelResult = await _service.Get(model.Id);
-            await BroadcastMessageSignalR(NotificationType.ModelChangeStatus, modelResult, false, GetUserId());
+            await BroadcastMessageSignalR(NotificationTypeEnum.ModelChangeStatus, modelResult, false, GetUserId());
 
             return SuccessResult();
         }
@@ -92,7 +92,7 @@ namespace signalr_best_practice_api.Controllers.Base
 
             await _service.Delete(id);
 
-            await BroadcastMessageSignalR(NotificationType.ModelDelete, modelResult, false, GetUserId());
+            await BroadcastMessageSignalR(NotificationTypeEnum.ModelDelete, modelResult, false, GetUserId());
 
             return SuccessResult();
         }

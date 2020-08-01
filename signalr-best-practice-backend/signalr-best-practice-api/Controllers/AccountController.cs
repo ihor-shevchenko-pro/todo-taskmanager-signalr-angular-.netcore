@@ -77,7 +77,7 @@ namespace signalr_best_practice_api.Controllers
                        model.UserProfile ?? new UserProfileAddApiModel());
             var signIn = await GetTokenApiModel(user);
 
-            await BroadcastMessageSignalR(NotificationType.ModelAdd, user, true, user.Id);
+            await BroadcastMessageSignalR(NotificationTypeEnum.ModelAdd, user, true, user.Id);
 
             return SuccessResult(signIn);
         }

@@ -7,7 +7,9 @@ import { RegistrationComponent } from './components/account/registration/registr
 import { LoginComponent } from './components/account/login/login.component';
 import { AccountComponent } from './components/account/account/account.component';
 import { UsersComponent } from './components/content/users/users.component';
-import { TodotaskComponent } from './components/content/todotask/todotask.component';
+import { AddTodotaskComponent } from './components/content/todotask/add-todotask/add-todotask.component';
+import { SentTodotasksComponent } from './components/content/todotask/sent-todotasks/sent-todotasks.component';
+import { ReceivedTodotasksComponent } from './components/content/todotask/received-todotasks/received-todotasks.component';
 
 
 const routes: Routes = [
@@ -27,7 +29,9 @@ const routes: Routes = [
         path: '', component: ContentComponent,
         children: [
           { path: 'users', component: UsersComponent },
-          { path: 'todotask', component: TodotaskComponent },
+          { path: 'add_todotask/:touserid', component: AddTodotaskComponent },
+          { path: 'sent_todotasks', component: SentTodotasksComponent },
+          { path: 'received_todotasks', component: ReceivedTodotasksComponent },
         ]
       }
     ]

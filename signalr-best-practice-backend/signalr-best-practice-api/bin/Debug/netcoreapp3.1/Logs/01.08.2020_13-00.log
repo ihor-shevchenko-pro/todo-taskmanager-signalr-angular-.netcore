@@ -1,0 +1,109 @@
+01.08.2020 14:53:26.1682 <> [MESSAGE][.ctor] Notification hub created
+01.08.2020 14:53:26.1684 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: d9f22dd0-0648-476b-b337-f46a71a20aa7 - ConnectionId trVwcJDmrrBKmiw72Bn1MQ
+01.08.2020 14:53:28.2911 <> [MESSAGE][.ctor] Notification hub created
+01.08.2020 14:53:28.2924 <> [MESSAGE][OnConnectedAsync] Connect userId: d9f22dd0-0648-476b-b337-f46a71a20aa7 - ConnectionId: BI6lQqwgxBka3BCOyNlmgA
+01.08.2020 14:53:32.2545 <> [MESSAGE][.ctor] Notification hub created
+01.08.2020 14:53:32.2546 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 26b2474c-b019-4324-bd65-e6f5511d34ca - ConnectionId uHtBK_hCUy0NUa2h-fCPmA
+01.08.2020 14:53:34.7569 <> [MESSAGE][.ctor] Notification hub created
+01.08.2020 14:53:34.7569 <> [MESSAGE][OnConnectedAsync] Connect userId: 26b2474c-b019-4324-bd65-e6f5511d34ca - ConnectionId: I0ZHWSYxlQlYzS10_oTFkQ
+01.08.2020 14:53:39.2619 <> [MESSAGE][.ctor] Notification hub created
+01.08.2020 14:53:39.2620 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: afd05241-8598-422b-8742-2632f34a44d8 - ConnectionId ZjIxYS_T2TcYrzh3lzKyWQ
+01.08.2020 14:53:41.4951 <> [MESSAGE][.ctor] Notification hub created
+01.08.2020 14:53:41.4951 <> [MESSAGE][OnConnectedAsync] Connect userId: afd05241-8598-422b-8742-2632f34a44d8 - ConnectionId: Isj8mT5K7EFUPKAZNfZdEw
+01.08.2020 14:54:07.6150 <> [MESSAGE][.ctor] Notification hub created
+01.08.2020 14:54:07.6150 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: afd05241-8598-422b-8742-2632f34a44d8 - ConnectionId Isj8mT5K7EFUPKAZNfZdEw
+01.08.2020 14:54:09.6993 <> [MESSAGE][.ctor] Notification hub created
+01.08.2020 14:54:09.6994 <> [MESSAGE][OnConnectedAsync] Connect userId: afd05241-8598-422b-8742-2632f34a44d8 - ConnectionId: R-UqI5h2h6MakczKEyCqWA
+01.08.2020 14:54:24.6861 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 14:55:39.9710 <> [MESSAGE][.ctor] Notification hub created
+01.08.2020 14:55:39.9710 <> [MESSAGE][OnConnectedAsync] Connect userId: bcb40556-b573-40fe-bd21-87fa9d964b9f - ConnectionId: pSo9ykumCUf6nw2Da9WivA
+01.08.2020 14:55:56.2970 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 14:55:56.2979 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 14:55:56.2982 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 14:56:09.1660 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 14:56:13.2130 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 14:56:15.4414 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 14:58:42.7064 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 14:59:07.5781 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 14:59:21.7471 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 14:59:27.3001 <> [ERROR][HandleExceptionAsync] System.Exception: Access denied. You can cancell only tasks which are in progress-status - NEW
+   at signalr_best_practice_bl.Services.ToDoTaskService.ChangeProgressStatus(String userId, ToDoTaskChangeProgressStatusApiModel model) in D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-bl\Services\ToDoTaskService.cs:line 150
+   at signalr_best_practice_api.Controllers.ToDoTaskController.ChangeProgressStatus(String id, ToDoTaskChangeProgressStatusApiModel model) in D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-api\Controllers\ToDoTaskController.cs:line 76
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at signalr_best_practice_api.Filters.ErrorHandlingMiddleware.Invoke(HttpContext context) in D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-api\Filters\ErrorHandlingMiddleware.cs:line 26
+
+01.08.2020 15:00:00.4592 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:00:14.9387 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:00:28.3567 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:00:42.2332 <> [ERROR][HandleExceptionAsync] System.Exception: Access denied. You can cancell only tasks which are in progress-status - NEW
+   at signalr_best_practice_bl.Services.ToDoTaskService.ChangeProgressStatus(String userId, ToDoTaskChangeProgressStatusApiModel model) in D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-bl\Services\ToDoTaskService.cs:line 150
+   at signalr_best_practice_api.Controllers.ToDoTaskController.ChangeProgressStatus(String id, ToDoTaskChangeProgressStatusApiModel model) in D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-api\Controllers\ToDoTaskController.cs:line 76
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at signalr_best_practice_api.Filters.ErrorHandlingMiddleware.Invoke(HttpContext context) in D:\Programming\C#\SignalR\signalr-best-practices\signalr-best-practice-backend\signalr-best-practice-api\Filters\ErrorHandlingMiddleware.cs:line 26
+
+01.08.2020 15:00:51.6322 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:01:08.1241 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:01:16.7526 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:01:35.8816 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:01:44.0972 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:02:01.7568 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:02:10.7986 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:02:34.2082 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:02:37.7321 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:02:48.9157 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:03:12.8883 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:04:14.0898 <> [MESSAGE][.ctor] Notification hub created
+01.08.2020 15:04:14.0898 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: d9f22dd0-0648-476b-b337-f46a71a20aa7 - ConnectionId BI6lQqwgxBka3BCOyNlmgA
+01.08.2020 15:04:15.9541 <> [MESSAGE][.ctor] Notification hub created
+01.08.2020 15:04:15.9542 <> [MESSAGE][OnConnectedAsync] Connect userId: d9f22dd0-0648-476b-b337-f46a71a20aa7 - ConnectionId: GfckFYK2rGqkImTCW2DL5A
+01.08.2020 15:53:18.1888 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:53:18.1909 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:53:18.1925 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:55:18.5128 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:55:18.5141 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:55:18.5150 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:57:01.3706 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:57:01.3737 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:57:01.3740 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 15:59:27.2429 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 16:02:03.0146 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 16:03:15.8590 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 16:04:19.0016 <> [MESSAGE][.ctor] Initialize push notification manager cache: True
+01.08.2020 16:08:55.2487 <> [MESSAGE][.ctor] Notification hub created
+01.08.2020 16:08:55.2487 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: bcb40556-b573-40fe-bd21-87fa9d964b9f - ConnectionId pSo9ykumCUf6nw2Da9WivA
+01.08.2020 16:09:12.9101 <> [MESSAGE][.ctor] Notification hub created
+01.08.2020 16:09:12.9102 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: afd05241-8598-422b-8742-2632f34a44d8 - ConnectionId R-UqI5h2h6MakczKEyCqWA
+01.08.2020 16:09:25.3162 <> [MESSAGE][.ctor] Notification hub created
+01.08.2020 16:09:25.3162 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: 26b2474c-b019-4324-bd65-e6f5511d34ca - ConnectionId I0ZHWSYxlQlYzS10_oTFkQ
+01.08.2020 16:11:31.2846 <> [MESSAGE][.ctor] Notification hub created
+01.08.2020 16:11:31.2846 <> [MESSAGE][OnDisconnectedAsync] Disconnect user: d9f22dd0-0648-476b-b337-f46a71a20aa7 - ConnectionId GfckFYK2rGqkImTCW2DL5A

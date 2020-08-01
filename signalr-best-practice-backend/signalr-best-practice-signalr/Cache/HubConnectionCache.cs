@@ -64,19 +64,6 @@ namespace signalr_best_practice_signalr.Cache
             }
         }
 
-
-       public virtual IEnumerable<string> GetConnectionIds(string connectionId)
-        {
-            HubUser temp;
-
-            lock (UsersLocker)
-            {
-                temp = Users.FirstOrDefault(x => x.ConnectionIds.Contains(connectionId));
-                return temp.ConnectionIds.Except(new[] { connectionId });
-            }
-        }
-
-
         public virtual void AddConnectionId(string userId, string connectionId)
         {
             lock (UsersLocker)
@@ -98,7 +85,6 @@ namespace signalr_best_practice_signalr.Cache
                 }
             }
         }
-
 
         public virtual void RemoveUsersByUserId(string userId)
         {

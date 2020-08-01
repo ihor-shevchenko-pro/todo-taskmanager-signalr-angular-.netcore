@@ -40,7 +40,9 @@ namespace signalr_best_practice_api
             AddJwtAuthentication(services);
 
             // SignalR
-            services.AddSignalR();
+            services.AddSignalR().AddJsonProtocol(options => {
+                options.PayloadSerializerOptions.PropertyNamingPolicy = null;
+            });
 
             // CORS
             services.AddCors(options =>

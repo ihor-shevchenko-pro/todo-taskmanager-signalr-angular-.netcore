@@ -1,0 +1,149 @@
+<h2>All your received tasks</h2>
+
+<!-- Table start -->
+<table class="table table-striped table-hover shadow">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Progress</th>
+            <th scope="col">Expiration date</th>
+            <th scope="col">Owner</th>
+            <th scope="col">Created</th>
+            <th scope="col">Updated</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let task of receivedTodotasks; index as i">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{task.title}}</td>
+            <td>
+                <span class="bg-new-status" *ngIf="task.progress_status == 0">New</span>
+                <span class="bg-inprogress-status" *ngIf="task.progress_status == 1">In Progress</span>
+                <span class="bg-complited-status" *ngIf="task.progress_status == 2">Complited</span>
+                <span class="bg-cancelled-status" *ngIf="task.progress_status == 3">Cancelled</span>
+            </td>
+            <td>{{task.expiration_date | date: 'dd/MM/yyyy hh:mm:ss'}}</td>
+            <td>{{task.from_user.email}}</td>
+            <td>{{task.created | date: "dd/MM/yyyy hh:mm:ss"}}</td>
+            <td>{{task.updated | date: 'dd/MM/yyyy hh:mm:ss'}}</td>
+            <td>
+                <button class="btn btn-sm btn-outline-success " placement="top" ngbTooltip="Task details"
+                    (click)="openTaskDetailsModal(taskDetailsModal, task.id)">
+                    <img class="task-details-btn" src="/assets/img/check-task.png" style="width: 16px;">
+                </button>
+            </td>
+            <td>
+                <button *ngIf="task.progress_status == 3" class="btn btn-sm btn-outline-info" placement="top"
+                    ngbTooltip="Change status"
+                    (click)="openProgressStatusOptionsModal(progressStatusOptionsModal, task.id)" disabled>
+                    <img class="trash-btn" src="/assets/img/status.png" style="width: 16px;">
+                </button>
+                <button *ngIf="task.progress_status != 3" class="btn btn-sm btn-outline-info" placement="top"
+                    ngbTooltip="Change status"
+                    (click)="openProgressStatusOptionsModal(progressStatusOptionsModal, task.id)">
+                    <img class="trash-btn" src="/assets/img/status.png" style="width: 16px;">
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- Table finish -->
+
+
+<!-- Modal progress-status options -->
+<ng-template #progressStatusOptionsModal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Change progress-status</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body w-100">
+        <div class="row pl-5">
+            <ng-multiselect-dropdown [placeholder]="'Choose option ...'" [settings]="dropdownSettingsProgressStatus"
+                [data]="progressStatusData" (onSelect)="onItemProgressStatusSelect($event)" style="width: 90%;">
+            </ng-multiselect-dropdown>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="changeProgressStatus()">
+            <img src="/assets/img/save-icon.png" style="width: 14px;" class="mr-1">
+            Save
+        </button>
+        <button type="button" class="btn btn-secondary" (click)="modal.close()">Close</button>
+    </div>
+</ng-template>
+<!-- Modal progress-status options -->
+
+
+<!-- Modal task details -->
+<ng-template #taskDetailsModal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Task details</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body w-100">
+        <!-- Title -->
+        <div class="row">
+            <label class="col-sm-3">Title</label>
+            <div class="col-sm-9">
+                <input class="form-control" disabled value="{{userTaskDetails.title}}">
+            </div>
+        </div><br>
+        <!-- Owner -->
+        <div class="row">
+            <label class="col-sm-3">Owner</label>
+            <div class="col-sm-9">
+                <input class="form-control" disabled value="{{userTaskDetails.from_user.email}}">
+            </div>
+        </div><br>
+        <!-- Expiration date -->
+        <div class="row">
+            <label class="col-sm-3">Expiration date</label>
+            <div class="col-sm-9">
+                <input class="form-control" disabled
+                    value="{{userTaskDetails.expiration_date | date: 'dd/MM/yyyy hh:mm:ss'}}">
+            </div>
+        </div><br>
+        <!-- Progress -->
+        <div class="row">
+            <label class="col-sm-3">Progress status</label>
+            <div class="col-sm-9">
+                <input *ngIf="userTaskDetails.progress_status == 0" class="form-control" disabled value="New">
+                <input *ngIf="userTaskDetails.progress_status == 1" class="form-control" disabled value="In progress">
+                <input *ngIf="userTaskDetails.progress_status == 2" class="form-control" disabled value="Complited">
+                <input *ngIf="userTaskDetails.progress_status == 3" class="form-control" disabled value="Cancelled">
+            </div>
+        </div><br>
+        <!-- Created date -->
+        <div class="row">
+            <label class="col-sm-3">Created date</label>
+            <div class="col-sm-9">
+                <input class="form-control" disabled value="{{userTaskDetails.created | date: 'dd/MM/yyyy hh:mm:ss'}}">
+            </div>
+        </div><br>
+        <!-- Updated date -->
+        <div class="row">
+            <label class="col-sm-3">Updated date</label>
+            <div class="col-sm-9">
+                <input class="form-control" disabled value="{{userTaskDetails.updated | date: 'dd/MM/yyyy hh:mm:ss'}}">
+            </div>
+        </div><br>
+        <!-- Description -->
+        <div class="row">
+            <label class="col-sm-3">Description</label>
+            <div class="col-sm-9">
+                <textarea rows="3" class="form-control" disabled value="{{userTaskDetails.description}}"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="modal.close()">Close</button>
+    </div>
+</ng-template>
+<!-- Modal task details -->

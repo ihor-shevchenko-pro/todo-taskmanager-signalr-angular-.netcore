@@ -74,7 +74,7 @@ namespace signalr_best_practice_dl_postgresql.Migrations
                     Title = table.Column<string>(nullable: true),
                     ProgressStatus = table.Column<int>(nullable: false),
                     Description = table.Column<string>(nullable: true),
-                    TaskFinish = table.Column<DateTime>(nullable: true),
+                    ExpirationDate = table.Column<DateTime>(nullable: true),
                     FromUserId = table.Column<string>(nullable: true),
                     ToUserId = table.Column<string>(nullable: true)
                 },

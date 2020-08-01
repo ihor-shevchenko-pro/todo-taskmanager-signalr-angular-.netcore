@@ -1,0 +1,77 @@
+<h2>Create new task</h2>
+
+<div class="shadow bg-white pt-4 pb-2 border-top">
+    <form class="col-12" [formGroup]="addToDoTaskModel" autocomplete="off" (submit)="createToDoTaskHandler()">
+        <!-- Title -->
+        <div class="input-group form-group row">
+            <label for="inputTitle" class="col-sm-3">
+                <span class="text-muted">Title *</span>
+            </label>
+            <div class="col-sm-9">
+                <div class="input-group">
+                    <input class="form-control" id="inputTitle" formControlName="Title" placeholder="Title">
+                    <div class="input-group-append">
+                        <span class="input-group-text bg-white">
+                            <img src="/assets/img/title-icon.png" style="width: 25px;">
+                        </span>
+                    </div>
+                </div>
+                <small class="form-text text-muted">Enter title</small>
+            </div>
+            <label class="text-danger offset-sm-3 col-sm-9"
+                *ngIf="addToDoTaskModel.get('Title').touched && addToDoTaskModel.get('Title').errors?.required">
+                * required field
+            </label>
+        </div>
+        <!-- Description -->
+        <div class="input-group form-group row">
+            <label for="inputTitle" class="col-sm-3">
+                <span class="text-muted">Description *</span>
+            </label>
+            <div class="col-sm-9">
+                <div class="input-group">
+                    <input class="form-control" id="inputDescription" formControlName="Description"
+                        placeholder="Description">
+                    <div class="input-group-append">
+                        <span class="input-group-text bg-white">
+                            <img src="/assets/img/description-icon.png" style="width: 25px;">
+                        </span>
+                    </div>
+                </div>
+                <small class="form-text text-muted">Enter description</small>
+            </div>
+            <label class="text-danger offset-sm-3 col-sm-9"
+                *ngIf="addToDoTaskModel.get('Description').touched && addToDoTaskModel.get('Description').errors?.required">
+                * required field
+            </label>
+        </div>
+        <!-- Date of birth -->
+        <div class="input-group form-group row">
+            <label for="datepicker" class="col-sm-3 text-muted">Expiration date</label>
+            <div class="col-sm-9">
+                <div class="input-group">
+                    <input class="form-control" placeholder="yyyy-mm-dd" id="datepicker" autocomplete="off"
+                        [minDate]="{year: 1900, month: 1, day: 1}" [maxDate]="{year: 2050, month: 12, day: 31}"
+                        name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" formControlName="ExpirationDate">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button">
+                            <img src="/assets/img/date-icon.png" style="width: 20px;">
+                        </button>
+                    </div>
+                </div>
+                <small class="form-text text-muted">Enter expiration date</small>
+            </div>
+        </div>
+
+        <!-- Button start-->
+        <div class="form-group row">
+            <div class="offset-3 col-9 pl-2">
+                <button type="submit" class="btn btn-primary shadow" [disabled]="!addToDoTaskModel.valid">
+                    <img src="/assets/img/save-icon.png" style="width: 14px;" class="mr-1">
+                    SAVE
+                </button>
+            </div>
+        </div>
+        <!-- Button finish -->
+    </form>
+</div>

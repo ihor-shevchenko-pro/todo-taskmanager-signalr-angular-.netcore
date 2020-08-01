@@ -1,6 +1,5 @@
 ﻿using signalr_best_practice_api_models;
 using signalr_best_practice_api_models.Models;
-using signalr_best_practice_api_models.Models.Response;
 using signalr_best_practice_bl.Services.Base;
 using signalr_best_practice_core.Entities.Base;
 using signalr_best_practice_core.Entities.UserAccount;
@@ -209,15 +208,5 @@ namespace signalr_best_practice_bl.Services.UserAccount
             };
             return user;
         }
-
-
-        #region NonAction
-
-        public override Task<PaginationResponseApiModel<UserGetFullApiModel>> Get(int start, int count, EntitySortingEnum sort)
-        {
-            throw new Exception();
-        }
-
-        #endregion
     }
 }

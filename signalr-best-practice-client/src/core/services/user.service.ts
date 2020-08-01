@@ -11,6 +11,7 @@ import { IPaginationResponse } from '../interfaces/base/pagination-response';
 })
 export class UserService {
 
+  public static currentUser: IUser = null;
   private readonly _getCurrentUser = userEndpoints.getCurrentUser;
   private readonly _getUsers = userEndpoints.getUsers;
 
@@ -23,6 +24,10 @@ export class UserService {
   public getUsers(start: number, count: number, sort: EntitySortingEnum): Observable<IPaginationResponse<IUser>>{
     let url = `${this._getUsers}?start=${start}&count=${count}&sort=${sort}`;
     return this._httpClient.get<IPaginationResponse<IUser>>(url);
+  }
+
+  public setCurrentUserData(user: IUser): void {
+    UserService.currentUser = user;
   }
 
 }

@@ -10,7 +10,7 @@ using signalr_best_practice_dl_postgresql;
 namespace signalr_best_practice_dl_postgresql.Migrations
 {
     [DbContext(typeof(PostgreSqlContext))]
-    [Migration("20200722084530_Init")]
+    [Migration("20200729141854_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -56,6 +56,9 @@ namespace signalr_best_practice_dl_postgresql.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("text");
 
+                    b.Property<DateTime?>("ExpirationDate")
+                        .HasColumnType("timestamp without time zone");
+
                     b.Property<string>("FromUserId")
                         .HasColumnType("text");
 
@@ -64,9 +67,6 @@ namespace signalr_best_practice_dl_postgresql.Migrations
 
                     b.Property<int>("Status")
                         .HasColumnType("integer");
-
-                    b.Property<DateTime?>("TaskFinish")
-                        .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("Title")
                         .HasColumnType("text");

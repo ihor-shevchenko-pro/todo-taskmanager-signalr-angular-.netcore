@@ -10,7 +10,7 @@ namespace signalr_best_practice_core.Entities
         public ToDoTaskStatusEnum ProgressStatus { get; set; }
         public string Description { get; set; }
 
-        public DateTime? TaskFinish { get; set; }
+        public DateTime? ExpirationDate { get; set; }
 
         public string FromUserId { get; set; }
         public virtual User FromUser { get; set; }

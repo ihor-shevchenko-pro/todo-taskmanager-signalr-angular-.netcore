@@ -1,0 +1,5 @@
+![Image alt](https://github.com/igor-shevchenko-pro/SignalR_best_practice-Angular-.Net_Core-ToDoTaskManagerApp/raw/master/main.jpg)
+![Image alt](https://github.com/igor-shevchenko-pro/SignalR_best_practice-Angular-.Net_Core-ToDoTaskManagerApp/raw/master/global-task.png)
+![Image alt](https://github.com/igor-shevchenko-pro/SignalR_best_practice-Angular-.Net_Core-ToDoTaskManagerApp/raw/master/status-task.png)
+![Image alt](https://github.com/igor-shevchenko-pro/SignalR_best_practice-Angular-.Net_Core-ToDoTaskManagerApp/raw/master/single-task.jpg)
+![Image alt](https://github.com/igor-shevchenko-pro/SignalR_best_practice-Angular-.Net_Core-ToDoTaskManagerApp/raw/master/cancelled-task.jpg)

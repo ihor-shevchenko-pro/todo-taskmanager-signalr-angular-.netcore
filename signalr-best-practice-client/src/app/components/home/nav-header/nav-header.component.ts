@@ -1,8 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { IUser } from 'src/core/interfaces/user/user';
-import { Router } from '@angular/router';
-import { UserService } from 'src/core/services/user.service';
+import { Component, OnInit, Input } from '@angular/core';
 import { AccountService } from 'src/core/services/account.service';
+import { SignalRService } from 'src/core/services/signal-r.service';
 
 @Component({
   selector: 'app-nav-header',
@@ -11,31 +9,20 @@ import { AccountService } from 'src/core/services/account.service';
 })
 export class NavHeaderComponent implements OnInit {
 
-  public userName: string = null;
-  public email: string = null;
+  @Input() public userName: string;
 
-  constructor(private _router: Router, 
-              private _userService: UserService,
-              private _accountService: AccountService) { }
+  constructor(private _accountService: AccountService,
+              private _signalRService: SignalRService) { }
 
   ngOnInit(): void {
-    this.getCurrentUser();
-  }
-
-  private getCurrentUser() {
-    this._userService.getCurrentUser().subscribe(
-      (res: IUser) => {
-        // console.log(res);
-        this.userName = res.user_name;
-        this.email = res.email;
-      },
-      errors => {
-        // console.log(errors);
-      }
-    );
   }
 
   public onLogout(): void {
+    // try to start SignalRConnection
+    if(SignalRService.isConnected == true){
+      this._signalRService.closeSignalRConnection();
+    }
+    // logout
     this._accountService.onLogout();
   }
 
